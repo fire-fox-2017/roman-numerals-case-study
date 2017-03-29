@@ -12,10 +12,10 @@ solusi 3: forever loop if num > 1000
 
 3. Adakah sintaks baru yang belum kamu ketahui? Apakah ada operator baru, expression atau method baru?
 unary operator di depan variable
-
++object
 
 4. Dapatkah kamu mengerti baris per baris dari semua code yang ada?
-solusi 2 yg sudah dimengerti, solusi lainnya bisa dimengerti
+solusi 2 yg belum 100% dimengerti, solusi lainnya bisa dimengerti
 
 5. Dapatkah kamu gunakan sintaks baru yang kamu temui di sini di *project* kamu berikutnya?
 bisa
@@ -25,6 +25,7 @@ tidak ada
 hanya memakai array utk store roman numeral dan translasi numbers index
 
 7. Apa yang dapat kamu pelajari dari perspektif yang berbeda dari berbagai solution code? Apakah benar-benar berbeda? Jika ya, kenapa berbeda? Debat! Cari tau.
+Solution code nya tidak mempunyai logic yg jelas. Sangat susah codenya untuk di reusable (terutama solusi 2).
 
 8. Jika kamu harus memilih satu, mana yang menurut kamu yang merupakan solsi terbaik, dan kenapa? Diskusikan dengan teman kelompok kamu tentang hal ini.
 solution 4
