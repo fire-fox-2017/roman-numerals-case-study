@@ -37,3 +37,93 @@ Semakin sedikit fungsi atau baris kode yang ditulis, maka compiler JS akan membu
 10. Apakah dampak dari pola atau pattern terhadap maintenance code? Kenapa kamu bisa yakin?
 Semakin efektif/minimal pattern sebuah kode, maka maintenance code akan semakin mudah. Karena orang akan lebih gampang membacanya. Pada akhirnya, akan lebih mudah merefaktor atau menemukan bugs.
 */
+
+
+
+//JS yang pertama
+ /*var roman = new Array();
+ roman = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
+ var decimal = new Array();
+ decimal = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+ 
+ function to_roman(value) {
+   if(value<=0 || value>=4000) return value;
+   var romanNumeral = '';
+   for(var i=0; i<roman.length; i++) {
+     while (value >= decimal[i]) {
+       value -= decimal[i];
+       romanNumeral += roman[i];
+     }
+   }
+   return romanNumeral;
+ }*/
+ 
+ //JS yang kedua 55
+ /*function to_roman(num) {
+   if (typeof num !== 'number')
+     return false;
+ 
+   var digits = String(+num).split(''),
+   key = ['', 'C', 'CC', 'CCC', 'CD', 'D', 'DC', 'DCC', 'DCCC', 'CM',
+     '', 'X', 'XX', 'XXX', 'XL', 'L', 'LX', 'LXX', 'LXXX', 'XC',
+     '', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'],
+     roman_num = '',
+     i = 3;
+     while (i--) {
+       roman_num = (key[+digits.pop() + (i*10)] || '') + roman_num;
+       console.log('nilai dalam while ' + i + ': ' + roman_num);
+     }
+ 
+     return Array(+digits.join('') + 1).join('M') + roman_num;
+ }*/
+ 
+
+ //JS yang ketiga 
+ /*var to_roman = function(num) {
+ 
+   //Create arrays with default conversion with matching indices.
+   var decimalValue = [1,4,5,9,10,40,50,90,100,400,500,900,1000];
+   var romanNumeral = ['I','IV','V','IX','X','XL','L','XC','C','CD','D','CM','M'];
+ 
+   //Create a copy of num to work on and an empty string variable for the final roman number
+   var numCopy = num;
+   var romanized = '';
+ 
+   //While the decimal number is greater than 0,
+   while(numCopy>0) {
+     //Loop through the indices of the decimalValue array.
+     for(var index = 0; index<decimalValue.length; index++) {
+       //Get the maximum decimal number less or equal then the decimal number.
+       if(+decimalValue[index] <= numCopy && +decimalValue[+index + 1] > numCopy) {
+         //Add the Roman numeral & decrease numCopy by the decimal equivalent.
+         romanized += romanNumeral[index];
+         numCopy -= decimalValue[index];
+       }
+     }
+   }
+ 
+   return romanized;
+ };*/
+ 
+ //JS yang keempat
+ /*function to_roman(num) {
+   var result = '';
+   var decimal = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+   var roman = ['M', 'MC', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
+   for (var i=0; i<=decimal.length; i++) {
+     while (num%decimal[i] < num) {
+       result += roman[i];
+       num -= decimal[i];
+     }
+   }
+   return result;
+ } 
+ 
+ console.log('My totally sweet testing script for new roman\n')
+ console.log('input | expected | actual')
+ console.log('———|—————|———')
+ console.log('4     | IV       | ', to_roman(4))
+ console.log('9     | IX       | ', to_roman(9))
+ console.log('13    | XIII     | ', to_roman(13))
+ console.log('1453  | MCDLIII  | ', to_roman(1453))
+ console.log('1646  | MDCXLVI  | ', to_roman(1646))*/
