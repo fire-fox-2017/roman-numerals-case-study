@@ -4,7 +4,7 @@ Please answer the questions below :
 1. Apakah semua solusi bisa di eksekusi? Bagaimana caranya mem-verifikasinya?
 
 Semua solusi bisa dieksekusi. Cara verifikasinya adalah dengan menggunakan node js untuk melihat
-hasil eksekusi. Akan tetapi solusi nomor 3 hasil output tidak sesuai
+hasil eksekusi. Akan tetapi solusi nomor 2 dan 3 hasil output tidak sesuai
 
 2. Apakah ada solusi code yang mengandung *bugs*? Dan bagaimana cara mem-verifikasinya?
 
@@ -16,6 +16,10 @@ Pengecekan kondisi akan menjadi if (900 <= 1000 && 1000 > 1000). Karena 1000 > 1
 maka akan keluar dari pengecekan kondisi dan nilai numCopy akan tetap. Setelah perulangan for selesai,
 maka akan kembalik ke perulangan while. Karena numCopy nilainya > 0, maka akan masuk perulangan for
 dan dilakukan pengecekan kondisi lagi sehingga menghasilkan infinite loop.
+
+Di solusi 2 juga tidak sesuai hasilnya.
+
+Cara verifikasinya adalah dengan membandingkan hasil di terminal dengan hasil yang diharapkan.
 
 3. Adakah sintaks baru yang belum kamu ketahui? Apakah ada operator baru, expression atau method baru?
 
@@ -37,7 +41,7 @@ Tidak ada struktur data baru. Terdapat struktur data array
 7. Apa yang dapat kamu pelajari dari perspektif yang berbeda dari berbagai solution code? Apakah benar-benar berbeda? Jika ya, kenapa berbeda? Debat! Cari tau.
 
 Terdapat berbagai cara dalam menyelesaikan suatu permasalahan. Namun tiap solusi berbeda dalam tingkat
-efektivitas dan efisiensi. Terdapat perbedaaan dalam tiap2 solusi. 
+efektivitas dan efisiensi. Terdapat perbedaaan dalam tiap2 solusi.
 
 Jika tidak dilakukan perulangan
 
@@ -53,7 +57,7 @@ menggunakan benchmark performa pada suatu aplikasi. Lalu dicari aplikasi dengan 
 fungsi pada aplikasi.
 
 10. Apakah dampak dari pola atau pattern terhadap maintenance code? Kenapa kamu bisa yakin?
-Terdapat dampak dari pola dalam maintenance code, karena dengan pola yang baik jika terdapat perubahan 
+Terdapat dampak dari pola dalam maintenance code, karena dengan pola yang baik jika terdapat perubahan
 maka dapat dilakukan perubahan pada code. Jika pola-nya tidak baik, maka code harus diubah banyak agar
 sesuai dengan perubahan.
 */
