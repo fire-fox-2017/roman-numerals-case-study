@@ -5,7 +5,8 @@ Please answer the questions below :
     Jawab : Semua solusi bisa dijalankan, solusi 1 dan 4 sesuai kebutuhan user akan tetapi 2 dan 3 tidak memenuhi kebutuhan user.
 
 2. Apakah ada solusi code yang mengandung *bugs*? Dan bagaimana cara mem-verifikasinya?
-    Jawab : ada pada solusi 2 , menampilkan operasi setiap line.
+    Jawab : ada pada solusi 2 , bugs ditemukan ketika num digitnya lebih 1 maka dia akan menampilkan M sebanyak nilai digits yang lebih dari 1. Contoh 13=MIII, 35=MMMV
+    menampilkan operasi setiap line.
 
 3. Adakah sintaks baru yang belum kamu ketahui? Apakah ada operator baru, expression atau method baru?
     Jawab : ada sintaks yang baru diketahui yaitu String(index), tidak ada operator baru yang ditemukan, tidak ada expression atau method baru.
